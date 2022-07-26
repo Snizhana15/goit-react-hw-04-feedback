@@ -1,0 +1,22 @@
+.buttonList {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  border: none;
+  width: 60px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 800;
+}
+.button:hover,
+.button:focus {
+  box-shadow: 4px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  border: 3px solid burlywood;
+}
+.button:not(:last-child) {
+  margin-right: 30px;
+}
