@@ -3,6 +3,7 @@ import Statistics from './Statistics/Statistics';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Section from './Section/Section';
 import Notification from './Notification/Notification';
+
 class Feedback extends Component {
   state = {
     good: 0,
@@ -49,4 +50,5 @@ class Feedback extends Component {
     );
   }
 }
+
 export default Feedback;
