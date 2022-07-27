@@ -8,7 +8,6 @@ const Notification = ({ message }) => {
     </div>
   );
 };
-
 Notification.propTypes = {
   message: PropTypes.string,
 };
