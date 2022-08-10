@@ -8,10 +8,9 @@ const Feedback = () => {
   const [bad, setBad] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [good, setGood] = useState(0);
-  const feedbackTypes = { good, neutral, bad };
 
   const countTotalFeedback = () => {
-    return Object.values(feedbackTypes).reduce((acc, value) => acc + value, 0);
+    return good + neutral + bad;
   };
   const onBtnClick = evt => {
     const { name } = evt.currentTarget;
@@ -41,7 +40,7 @@ const Feedback = () => {
     <div>
       <Section title="Please leave feedback">
         <FeedbackOptions
-          options={Object.keys(feedbackTypes)}
+          options={Object.keys({ bad, neutral, good })}
           onLeaveFeedback={onBtnClick}
         />
         {total === 0 ? (
